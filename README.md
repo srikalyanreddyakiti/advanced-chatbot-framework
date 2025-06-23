@@ -31,3 +31,7 @@ A modular GPT-2-based chatbot system for training, generating, and interacting w
 ## Dataset
 
 Use a plain `.txt` file with training data. One line = one sample. Place it anywhere and reference it via `--data_path`.
+
+## 👨‍💻 Author  
+**Akiti Sri Kalyan Reddy**  
+Data Science and Artificial Intelligence  
