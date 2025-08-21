@@ -1,37 +1,54 @@
 # advanced-chatbot-framework
-advanced-chatbot-framework is a modular, GPT-2-based chatbot system designed for building, training, and deploying intelligent conversational agents. It supports fine-tuning on custom datasets, interactive chat via command line, and text generation. Ideal for research, prototyping, or extending into production-ready AI assistants.
 
-A modular GPT-2-based chatbot system for training, generating, and interacting with AI-driven conversations.
+A modular GPT-2-based chatbot system designed for building, training, and deploying intelligent conversational agents. It supports fine-tuning on custom datasets, interactive chat via the command line, and text generation. This framework is ideal for research, prototyping, and extensions into production-ready AI assistants.
+
+---
 
 ## Project Structure
 
 ```
+.
 ├── buildmodel.py        # Builds and trains the GPT-2 model
-├── chatter.py           # Chat interface to interact with the trained model
+├── chatter.py           # Command-line interface for chatting with the trained model
 ├── generate.py          # Generates text using the trained GPT-2 model
 ├── gpt-2.py             # Core GPT-2 model setup and architecture
 ```
 
+---
+
 ## Features
 
-- Fine-tunes GPT-2 on custom text data
-- Command-line chatbot interface
-- Modular design for training, inference, and interaction
-- Clean text generation with contextual flow
+- Fine-tunes GPT-2 on any custom text dataset  
+- Command-line chatbot interface for interactive conversations  
+- Modular design separating training, inference, and interaction  
+- Supports clean text generation with contextual flow  
+
+---
 
 ## Requirements
 
-- Python 3.8+
-- transformers
-- torch or tensorflow (depending on backend)
-- numpy
-- tqdm
-- argparse
+- Python 3.8+  
+- `transformers`  
+- `torch` or `tensorflow` (backend choice)  
+- `numpy`  
+- `tqdm`  
+- `argparse`  
+
+Install dependencies:
+
+```bash
+pip install transformers torch numpy tqdm argparse
+```
+
+---
 
 ## Dataset
 
-Use a plain `.txt` file with training data. One line = one sample. Place it anywhere and reference it via `--data_path`.
+Training data must be provided as a plain `.txt` file, with each line representing one sample. Reference the dataset path using the `--data_path` argument when running training scripts.
 
-## 👨‍💻 Author  
-**Akiti Sri Kalyan Reddy**  
+---
+
+## Author
+
+**Sri Kalyan Reddy Akiti**  
 Data Science and Artificial Intelligence  
